@@ -16,3 +16,11 @@ h1, h2 {
   text-align: right;
   width: 15%;
 }
+
+.head {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: MediumSeaGreen;
+}
