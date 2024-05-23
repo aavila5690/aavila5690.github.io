@@ -10,11 +10,11 @@ h1, h2 {
 
 .name {
   text-align: left;
-  width: 15%;
+  width: 10%;
 }
 .directory {
   text-align: right;
-  width: 15%;
+  width: 20%;
 }
 
 .head p{
