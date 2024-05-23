@@ -1,11 +1,11 @@
 .name {
-  text-align: left;
+  text-align: center;
   width: 20%;
 }
 .directory {
   text-align: right;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .head {
@@ -28,8 +28,5 @@
 }
 
 .main-body {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
+  display: inline-block;
 }
