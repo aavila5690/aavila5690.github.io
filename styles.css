@@ -67,6 +67,7 @@ body {
   position: relative;
   top: 180px;
   left: 10%;
+  width: 60%;
 }
 
 .intro h1 {
@@ -88,6 +89,6 @@ body {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
