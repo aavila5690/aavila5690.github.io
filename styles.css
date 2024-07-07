@@ -44,6 +44,7 @@
   background: linear-gradient(#DCE4F3, #8F97AD);
   color: #322A33;
   cursor: pointer;
+  animation: fadeIn 0.4s ease-out;
 }
 
 body {
@@ -84,4 +85,14 @@ footer {
   bottom: 5px;
   width: 80%;
   text-align: center;
+}
+
+@keyframes fadeIn {
+   0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
