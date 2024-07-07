@@ -5,7 +5,7 @@
 #navbar {
   width: 100%;
   height: 60px;
-  background: linear-gradient(#3C3750,#45475B,#8F97AD);
+  background: linear-gradient(#3C3750, #45475B, #8F97AD);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,35 +21,27 @@
   padding-left: 15px;
 }
 
-#navbar ul {
+#links {
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
-  max-width: 650px;
-  width: 60%;
-}
-
-#navbar li {
-  display: flex;
-  height: 60px;
-  top: 0;
   padding-right: 15px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 60px;
 }
 
 #navbar a {
   color: #CCDBFA;
   text-decoration: none;
+  margin-right: 10px;
+  align-content: center;
+  text-align: center;
+  display: box;
+  width: 150px;
+  height: 60px;
+  vertical-align: middle;
 }
 
 #navbar a:hover {
-  background: linear-gradient(#DCE4F3,#8F97AD);
+  background: linear-gradient(#DCE4F3, #8F97AD);
   color: #322A33;
   cursor: pointer;
 }
@@ -57,17 +49,26 @@
 body {
   background-image: linear-gradient(#E5DACE, #F3E2D0);
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-size: 100% 100%;
   color: #322A33;
 }
 
 .intro {
-  display: block;
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  margin: auto;
   top: 180px;
-  left: 10%;
-  width: 60%;
+  right: 50%;
+  width: 40%;
+}
+
+#self_portrait {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  height: 65%;
 }
 
 .intro h1 {
@@ -78,17 +79,9 @@ body {
   font-size: 18px;
 }
 
-#self_portrait {
-  display: block;
-  position: relative;
-  top: -120px;
-  right: 10%;
-  border: 1px solid #E5DACE;
-}
-
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   width: 80%;
   text-align: center;
 }
