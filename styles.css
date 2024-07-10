@@ -1,5 +1,5 @@
 * {
-  font-family: Garamond, sans-serif;
+  font-family: 'Trebuchet MS' sans-serif;
 }
 
 #navbar {
@@ -44,7 +44,7 @@
   background: linear-gradient(#DCE4F3, #8F97AD);
   color: #322A33;
   cursor: pointer;
-  animation: fadeIn 0.4s ease-out;
+  animation: fadeIn 0.2s ease-out;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
   color: #322A33;
 }
 
-.intro {
+#intro {
   display: inline-block;
   position: absolute;
   margin: auto;
@@ -72,12 +72,66 @@ body {
   height: 65%;
 }
 
-.intro h1 {
+#intro h1 {
   font-size: 48px;
 }
 
-.intro p {
+#intro p {
   font-size: 18px;
+}
+
+#projects {
+  position: absolute;
+  width: 99%;
+  top: 600px;
+  text-align: center;
+}
+
+#embedded_systems_projects, #software_projects {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.project-tile {
+  height: 360px;
+  display: block;
+  position: relative;
+  border: 1px solid black;
+  max-width: 500px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.project-tile a {
+  font-size: 18px;
+  display: relative;
+  bottom: 12px;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: #45475B;
+  color: #DCE4F3;
+  align-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: #8F97AD;
+  color: #45475B;
 }
 
 footer {
@@ -95,4 +149,13 @@ footer {
     100% {
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 630px) {
+  #links {
+    width: 100%;
+  }
+  #navbar h1{
+    display: none;
+  }
 }
