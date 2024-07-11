@@ -1,5 +1,5 @@
 * {
-  font-family: 'Trebuchet MS' sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 #navbar {
@@ -55,21 +55,27 @@ body {
   color: #322A33;
 }
 
+#welcome-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 60px;
+  margin-top: -65px; 
+  padding-top: 65px;
+}
+
 #intro {
   display: inline-block;
-  position: absolute;
   margin: auto;
-  top: 180px;
-  right: 50%;
-  width: 40%;
+  width: 49%;
+  text-align: right;
 }
 
 #self_portrait {
   display: inline-block;
-  position: absolute;
   top: 120px;
-  left: 50%;
-  height: 65%;
+  height: 80%;
 }
 
 #intro h1 {
@@ -81,13 +87,15 @@ body {
 }
 
 #projects {
-  position: absolute;
+  display: block;
+  position: relative;
   width: 99%;
-  top: 600px;
   text-align: center;
 }
 
 #embedded_systems_projects, #software_projects {
+  margin-top: -120px; 
+  padding-top: 120px;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -132,14 +140,54 @@ body {
 .button:hover {
   background-color: #8F97AD;
   color: #45475B;
+  
+}
+
+#contact {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin-top: -60px; 
+  padding-top: 60px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 15vh;
+}
+
+#contact p {
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+#wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  height: 100px;
+}
+
+#wrapper img {
+  display: block;
+  transition: transform 0.3s ease-out;
+}
+
+#wrapper img:hover {
+  transform: translateY(8px);
 }
 
 footer {
-  position: absolute;
-  bottom: 5px;
-  width: 80%;
+  width: 100%;
   text-align: center;
+  margin: auto;
 }
+
+
 
 @keyframes fadeIn {
    0% {
@@ -151,11 +199,23 @@ footer {
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 650px) {
   #links {
     width: 100%;
   }
   #navbar h1{
     display: none;
+  }
+  #self_portrait {
+    display: none;
+  }
+  #intro {
+    width: 100%;
+    right: 0%;
+    text-align: center;
+    padding-top: 20%;
+  }
+  #wrapper {
+    width: 80%;
   }
 }
