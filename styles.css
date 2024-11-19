@@ -107,7 +107,13 @@ html {
   width: 100%;
   text-align: center;
   background-color: #747f8f;
+  margin-top: -60px; 
+  padding-top: 60px;
   padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 #projects h1 {
@@ -116,15 +122,6 @@ html {
   color: #CCDBFA;
   -webkit-text-stroke: 1px #322A33;
   border-radius: 10px;
-}
-
-#embedded_systems_projects, #software_projects {
-  margin-top: -130px; 
-  padding-top: 130px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
 }
 
 .project-tile {
@@ -151,9 +148,10 @@ html {
 }
 
 .project-tile p {
-  font-size: 18px;
+  font-size: 14px;
   position: relative;
   padding: 10px;
+  margin-bottom: -10px;
 }
 
 .button {
