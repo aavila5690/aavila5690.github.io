@@ -109,6 +109,7 @@ html {
   background-color: #747f8f;
   margin-top: -60px; 
   padding-top: 60px;
+  border: solid 1px black;
 }
 
 #projects h1 {
