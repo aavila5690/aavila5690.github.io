@@ -109,7 +109,7 @@ html {
   background-color: #747f8f;
   margin-top: -60px; 
   padding-top: 60px;
-  border: solid 1px black;
+  padding-bottom: 30px;
 }
 
 #projects h1 {
@@ -126,7 +126,6 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  border: solid 1px black;
 }
 
 .project-tile {
