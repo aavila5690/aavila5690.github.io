@@ -109,11 +109,6 @@ html {
   background-color: #747f8f;
   margin-top: -60px; 
   padding-top: 60px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
 }
 
 #projects h1 {
@@ -122,6 +117,14 @@ html {
   color: #CCDBFA;
   -webkit-text-stroke: 1px #322A33;
   border-radius: 10px;
+}
+
+#projects-portfolio {
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .project-tile {
