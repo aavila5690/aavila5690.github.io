@@ -126,6 +126,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  border: solid 1px black;
 }
 
 .project-tile {
